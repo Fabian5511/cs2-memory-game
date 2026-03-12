@@ -25,7 +25,6 @@ function flipCard(cardId) {
          secondCardId = cardId;
          //checkformatch();
          setTimeout(checkForMatch, 1000);
-         checkForMatch();
         console.log("second = " + secondCardId);
     }
 
@@ -40,7 +39,7 @@ function checkForMatch() {
     // Check if the text matches
     if(firstCard.innerText == secondCard.innerText ) {
         // Different color to show match
-        firstCard.style.backgroundcolor = "gold";
+        firstCard.style.backgroundColor = "gold";
         secondCard.style.backgroundColor = "gold";
     }
     else {
